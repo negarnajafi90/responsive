@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<style>
+
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+   position: relative;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 35px 5px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    opacity:0.5;
+}
+
+/* Create an active/current tablink class */
+ .tab button.active {
+  opacity:0.5;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  background-color: #ffffff;
+  border-top: none;
+  height: 80%;
+  width: 100%;
+  margin-top:-5.5%;
+}
+.size{
+}
+@media only screen and ( max-width:1000px ) {
+ 
+.tab button {
+  padding:15px 2px;
+  width:20%;
+  height:5%
+  margin-bottom:-14.5%;
+}
+
+.tabcontent {
+  display: none;
+  padding: 3px 6px;
+  background-color: #ffffff;
+  border-top: none;
+  margin-top:-9%;
+}
+
+
+.size{
+height:75px;
+}
+
+}
+</style>
+</head>
+<body>
+
+<div class="tab" style="text-align:center;">
+  <button class="tablinks active" onclick="openTab(event, 'Hauskey')"  style="margin-right:-1.5%;">
+    <img  src="https://theapplabb.com/wp-content/uploads/2019/10/hauskey_phone_3.png" alt="Hauskey" class="size" style="height:300px; width: 150px;">
+  </button>
+  <button class="tablinks" onclick="openTab(event, 'Pizza Forno')" style="margin-right:-1.5%;">
+    <img src="https://theapplabb.com/wp-content/uploads/2020/03/silver-resizeimage-2.png" alt="Pizza Forno" style="height:300px; width: 150px;">
+  </button>
+  <button class="tablinks" onclick="openTab(event, 'Get-A-Head')" style="margin-right:-1.5%;">
+    <img src="https://theapplabb.com/wp-content/uploads/2020/03/park-3.png" alt="Get-A-Head" style="height:300px; width: 150px;">
+  </button>
+  <button class="tablinks" onclick="openTab(event, 'ParkNfly')" style="margin-right:-1.5%;">
+    <img src="https://theapplabb.com/wp-content/uploads/2019/06/park-2-e1560879797154.png" alt="ParkNfly" style="height:300px; width: 150px;">
+  </button>
+  <button class="tablinks" onclick="openTab(event, 'Dial A bottle')" style="margin-left:0%;">
+    <img src="https://theapplabb.com/wp-content/uploads/2020/02/DAB-search.png" alt="Dial A bottle"  style="height:300px; width:150px;">
+  </button>
+
+</div>
+
+<div id="Hauskey" class="tabcontent" style="display: block; height:80%;">
+    <img src="https://theapplabb.com/wp-content/uploads/2020/01/logo.png" style="width:20%; height:10%; padding: 50px 50px 50px 50px; float: left;">
+  <div>
+    <p style="text-align: left; margin: 40px 20px 125px 20px;">Haüskey reinvents the way people find dream homes through a powerful AI-powered digital marketplace. Owing to a our streamlined process and design principles, 
+    we created a solid real estate mobile app for iOS and Android users elevating the user experience for anyone in the GTA real estate market and helped pave a path 
+    forward for Haüskey to expand.</p>
+    <a href="https://theapplabb.com/hauskey/">
+        <button class="button" style=" background-color:#39baaf; border: none;  color: white; padding: 15px 25px; text-align:left ;text-decoration: none; font-size:10px; cursor: pointer;  float:left; margin-top:-100px; margin-left:230px; ">LEARN MORE </button>
+    </a>
+  </div>
+</div>
+
+<div id="Pizza Forno" class="tabcontent" style="height:80%;">
+    <img src="https://theapplabb.com/wp-content/uploads/2020/03/images.png" style="width:20%; height:10%; padding: 50px 50px 50px 50px; float: left;">
+  <p style="text-align: left;margin: 40px 20px 157px 20px; ">The iOS and Android app allows users to locate the nearest Pizza Forno automated oven,explore menu, check availability, review ingredients list and receive latest offers 
+    and discounts.</p> 
+    <a href="https://theapplabb.com/pizza-forno/">
+        <button style=" background-color: #39baaf;border: none;  color: white; padding: 15px 25px; text-align: left;text-decoration: none; font-size:10px; cursor: pointer; float:left; margin-top:-100px; margin-left:230px;">LEARN MORE </button>
+    </a>
+</div>
+
+<div id="Get-A-Head" class="tabcontent" style="height:80%;">
+    <img src="https://theapplabb.com/wp-content/uploads/2020/03/Get-A-Head-Logo-1.png" style="width:20%; height:10%; padding: 50px 50px 150px 50px; float: left;">
+  <p style="text-align: left;margin: 40px 20px 93px 20px;">Get A-Head is a mental health platform focusing on enhancing the experience of counselors-in-training, and the supervising counselor. From our perspective, key driving forces
+       was to create an app which would disrupt the traditional way that supervision occurs, offering increased exposure to clients, greater feedback from supervisors, and increased 
+       access points for users</p>
+    <a href="https://theapplabb.com/get-a-head/">
+        <button style=" background-color: #39baaf;border: none;  color: white; padding: 15px 25px; text-align: left;text-decoration: none; font-size:10px; cursor: pointer; float:left; margin-top:-100px; margin-left:8px;">LEARN MORE </button>
+    </a>
+</div>
+
+<div id="ParkNfly" class="tabcontent" style="height:80%;">
+    <img src="https://theapplabb.com/wp-content/uploads/2020/03/Unknown.png" style="width:20%; height:10%; padding: 50px 50px 50px 50px; float: left;">
+    <p style="text-align: left;margin: 40px 20px 125px 20px;">Park’N Fly’s stated goal is to provide their customers with cost-effective parking options while enjoying a park happy experience with every stay. To effectively deliver on their promise of “Park Happy”,the objective was to build a mobile app to provide fast, efficient, convenient and superior service to their customers.</p>
+    <a href="https://theapplabb.com/park-n-fly-2/">
+        <button style=" background-color: #39baaf;border: none;  color: white; padding: 15px 25px; text-align: left;text-decoration: none; font-size:10px; cursor: pointer; float:left; margin-top:-100px; margin-left:230px;">LEARN MORE </button>
+    </a>
+</div>
+
+<div id="Dial A bottle" class="tabcontent" style="height:80%;">
+    <img src="https://theapplabb.com/wp-content/uploads/2020/03/Unknown.jpg" style="width:20%; height:10%; padding: 50px 50px 150px 50px; float: left;">
+    <p style="text-align: left;margin: 40px 20px 157px 20px;">Dial-A-Bottle app is an alcohol on-demand mobile platform that allows users to order alcohol online from their neighborhood liquor store and get it delivered at the convenience of their home.</p>
+    <a href="https://theapplabb.com/dial-a-bottle-2/">
+        <button style=" background-color: #39baaf;border: none;  color: white; padding: 15px 25px; text-align: left;text-decoration: none; font-size:10px; cursor: pointer;  float:left; margin-top:-100px; margin-left:8px;">LEARN MORE </button>
+    </a>
+</div>
+
+
+<script>
+
+function openTab(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+   
+</body>
+</html> 
